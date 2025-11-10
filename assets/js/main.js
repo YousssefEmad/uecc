@@ -161,6 +161,42 @@
             });
         }
 
+        if($('.brand-slider').length > 0) {
+            const brandSlider = new Swiper(".brand-slider-2", {
+                spaceBetween: 30,
+                speed: 2000,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    reverseDirection: true,
+                },
+                breakpoints: {
+                    1399: {
+                        slidesPerView: 6,
+                    },
+                    1199: {
+                        slidesPerView: 5,
+                    },
+                    991: {
+                        slidesPerView: 4,
+                    },
+                    767: {
+                        slidesPerView: 3,
+                    },
+                    575: {
+                        slidesPerView: 2,
+                    },
+                    400: {
+                        slidesPerView: 2,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    },
+                },
+            });
+        }
+
         //>> Project Start <<//
         if($('.project-slider').length > 0) {
             const projectSlider = new Swiper(".project-slider", {

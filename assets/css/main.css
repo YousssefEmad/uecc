@@ -1,24 +1,17 @@
-/*
-Theme Name: Konstruc
-Author: ModinaTheme
-Author URI: https://themeforest.net/user/modinatheme/
-Description: Construction HTML Template
-Version: 1.0.0
-*/
-/*CSS Table Of Content Ends Here*/
+
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme-color:#FF792D;
-  --theme-color-2:#566DFB;
+  --theme-color:#ca233f;
+  --theme-color-2:#ca233f;
   --header:#1E2023;
   --text:#555;
   --border:#E6EFFF;
   --ratting:#F8BC26;
-  --bg:#FFF3ED;
+  --bg:#ffeef0;
   ---box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -38,6 +31,9 @@ Version: 1.0.0
   position: relative;
   z-index: 1;
 }
+.theme-btn:hover {
+  color: var(--white);
+}
 .theme-btn i {
   width: 48px;
   height: 48px;
@@ -50,7 +46,7 @@ Version: 1.0.0
 }
 .theme-btn::before {
   content: "";
-  background-color: var(--header);
+  background-color: #38547f;
   width: 0;
   height: 50%;
   position: absolute;
@@ -62,7 +58,7 @@ Version: 1.0.0
 }
 .theme-btn::after {
   content: "";
-  background-color: var(--header);
+  background-color: #38547f;
   width: 0;
   height: 50%;
   position: absolute;
@@ -233,7 +229,9 @@ a {
   color: var(--header);
   transition: all 0.4s ease-in-out;
 }
-
+a:hover{
+  color: #375681;
+}
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
@@ -307,7 +305,7 @@ p {
 }
 .preloader .animation-preloader .txt-loading .letters-loading::before {
   animation: letters-loading 4s infinite;
-  color: var(--header);
+  color: #385680;
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -467,7 +465,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--theme-color);
+  color: #3d507d;
   display: inline-block;
   position: relative;
   padding-left: 50px;
@@ -484,7 +482,7 @@ p {
   left: 0;
   content: "";
   height: 2px;
-  background-color: var(--theme-color);
+  background-color: #3d507d;
   width: 37px;
   top: 13px;
 }
@@ -1574,6 +1572,9 @@ p {
 .header-2 .header-logo-2 {
   display: none;
 }
+.header-logo img{
+  width: 130px;
+}
 .header-2 .header-main {
   display: flex;
   align-items: center;
@@ -1921,9 +1922,6 @@ p {
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: var(---box-shadow);
-}
-.sticky.header-2 .header-logo {
-  display: none;
 }
 .sticky.header-2 .header-logo-2 {
   display: block;
@@ -2827,6 +2825,9 @@ p {
   -moz-transform: scale(1.19);
   transform: scale(1.19);
 }
+.hero-section-4 .hero-slider .swiper-slide{
+      height: 85vh;
+}
 .hero-section-4 .array-buttons {
   display: grid;
   align-items: center;
@@ -3093,6 +3094,7 @@ p {
 
 .hero-4 {
   position: relative;
+  height: 100%;
 }
 .hero-4 .left-shape {
   position: absolute;
@@ -3165,7 +3167,7 @@ p {
 }
 .hero-4 .hero-content h1 {
   color: var(--white);
-  font-size: 96px;
+  font-size: 50px;
   letter-spacing: -1.92px;
   font-weight: 700;
   line-height: 120%;
@@ -4922,7 +4924,8 @@ p {
 }
 .about-wrapper .about-image img {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 .about-wrapper .about-content {
   margin-top: 30px;
@@ -5042,7 +5045,7 @@ p {
 .about-wrapper .about-content .about-btn .icon {
   width: 55px;
   height: 55px;
-  line-height: 65px;
+  line-height: 60px;
   text-align: center;
   border-radius: 50%;
   background-color: var(--theme-color);
@@ -5742,19 +5745,27 @@ p {
   text-align: center;
   padding: 0px 35px 40px;
 }
+.service-card-items .service-content p{
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .service-card-items .service-content .icon {
-  width: 88px;
-  height: 88px;
-  text-align: center;
-  line-height: 105px;
-  background-color: var(--theme-color);
-  text-align: center;
-  margin: 0 auto;
-  margin-top: -40px;
-  position: relative;
-  margin-bottom: 25px;
-  font-size: 41px;
-  color: var(--white);
+    width: 88px;
+    height: 85px;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 105px;
+    background-color: var(--theme-color);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -40px;
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 41px;
+    color: var(--white);
 }
 .service-card-items .service-content .icon i {
   display: block;
@@ -6734,7 +6745,7 @@ p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 220px;
+  min-width: max-content;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
@@ -7390,7 +7401,7 @@ p {
   left: 0;
   width: 614px;
   height: 380px;
-  background: #FFF3ED;
+  background: #ffeef0;
 }
 @media (max-width: 1199px) {
   .project-section::before {
@@ -7406,6 +7417,48 @@ p {
     margin-right: 0;
   }
 }
+.project-image-items {
+  position: relative;
+  overflow: hidden;}
+
+.project-image-items img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.project-image-items .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.project-image-items:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-image-items .view-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--theme-color, #e0b200);
+  color: #fff;
+  font-size: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.project-image-items .view-icon:hover {
+  background: #000;
+}
+
 .project-wrapper .project-image-items {
   margin-top: 30px;
   position: relative;
@@ -7450,6 +7503,7 @@ p {
 .project-wrapper .project-image-items .content h4 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   padding-bottom: 20px;
+  color: #fff;
 }
 .project-wrapper .project-image-items .content h4 a {
   color: var(--white);
@@ -10192,9 +10246,15 @@ p {
   background-size: 100% 2px;
   background-image: linear-gradient(var(--theme-color), var(--theme-color));
 }
-
+.brand-section.partner .section-title span{
+  padding-right: 50px;
+}
+.brand-section.partner .section-title span::before{
+      left: unset;
+      right: 0;
+}
 .news-section {
-  margin: -200px 100px 0;
+  margin: 0px 100px 0;
   position: relative;
   z-index: 9;
 }
@@ -12405,6 +12465,7 @@ p.sticky-label {
 
 .footer-section {
   position: relative;
+  background-color: #ffeef0;
 }
 .footer-section .frame-shape {
   position: absolute;
