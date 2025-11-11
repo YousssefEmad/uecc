@@ -298,8 +298,8 @@
             });
         }
 
-        if($('.testimonial-slider-2').length > 0) {
-            const testimonialSider2 = new Swiper(".testimonial-slider-2", {
+        if($('.product-details').length > 0) {
+            const testimonialSider2 = new Swiper(".product-details", {
                 spaceBetween: 30,
                 speed: 2000,
                 loop: true,
@@ -313,7 +313,7 @@
                 },
                 breakpoints: {
                     991: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                     },
                     767: {
                         slidesPerView: 1,
