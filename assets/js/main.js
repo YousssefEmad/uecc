@@ -299,34 +299,26 @@
         }
 
         if($('.product-details').length > 0) {
-            const testimonialSider2 = new Swiper(".product-details", {
-                spaceBetween: 30,
-                speed: 2000,
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".array-prev",
-                    prevEl: ".array-next",
-                },
-                breakpoints: {
-                    991: {
-                        slidesPerView: 1,
-                    },
-                    767: {
-                        slidesPerView: 1,
-                    },
-                    575: {
-                        slidesPerView: 1,
-                    },
-                    0: {
-                        slidesPerView: 1,
-                    },
-                },
-            });
-        }
+    const testimonialSider2 = new Swiper(".product-details", {
+        spaceBetween: 30,
+        speed: 2000,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".array-next",
+            prevEl: ".array-prev",
+        },
+        breakpoints: {
+            991: { slidesPerView: 1 },
+            767: { slidesPerView: 1 },
+            575: { slidesPerView: 1 },
+            0: { slidesPerView: 1 },
+        },
+    });
+}
 
         if($('.testimonial-slider-3').length > 0) {
             const testimonialSider3 = new Swiper(".testimonial-slider-3", {
